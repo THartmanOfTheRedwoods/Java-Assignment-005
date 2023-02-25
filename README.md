@@ -3,21 +3,21 @@
 ## Part 1: - Tracing the Code
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
-    * Method names
-    * Variables
+    * Method names --- convertC2F, convertC2K, convertF2C, convertF2K, convertK2C, convertK2F, getTemp, getUnitChoice
+    * Variables --- celsius, fahrenheit, kelvin, unit
 * Using Java terminology, break down every piece of the method **convertF2K**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
+    * What is the access modifier? --- public
+    * Is it a class or object method, how do you know? --- class method, as it is static and doesn't require the instantiation of a new object
+    * What is its return type? --- double
+    * What parameters does it require, and what are the parameter(s) datatype(s)? --- parameter fahrenheit double type
+    * Describe for me how the body of the method executes (i.e. its flow of execution).  --- it is called and passed a double value. It then returns the value that is returned to it from calling the methods convertC2K(convertF2C(fahrenheit)), which takes the passed double value and converts it to C, then to K
 * Using Java terminology, break down method **getUnitChoice**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
-    * How do the format specifiers differ than what you've seen before and what do they do?
+    * What is the access modifier? --- public
+    * Is it a class or object method, how do you know? --- class method, as it is static and doesn't require the instantiation of a new object
+    * What is its return type? --- String
+    * What parameters does it require, and what are the parameter(s) datatype(s)? --- no parameters required
+    * Describe for me how the body of the method executes (i.e. its flow of execution). --- The method is called, it then prints lines of text to indicate what the user should type to the console. It then returns the user input to wherever the method was called.
+    * How do the format specifiers differ than what you've seen before and what do they do? ---  %-4s creates four spaces before the string, %40s%n creates padding so that the end of each string lines up and inserts a new line
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
