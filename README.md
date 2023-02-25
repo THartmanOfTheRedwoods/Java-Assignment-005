@@ -4,21 +4,35 @@
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
     * Method names
+      convertC2F, convertC2K, convertF2C, convertF2K, convertK2C, getTemp, getUnitChoice.
     * Variables
+      input, celsius, fahrenheit, kelvin.
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+      public.
     * Is it a class or object method, how do you know?
+      Class method as it is static.
     * What is its return type?
+      double.
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      Fahrenheit of type double.
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      Returns parameter fahrenheit, after executing method convertC2K, 
+      that takes method convertF2C, that takes variable fahrenheit.
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+      public.
     * Is it a class or object method, how do you know?
+      Class method as it is static.
     * What is its return type?
+      Return type is String.
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      getUnitChoice does not have any parameters.
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      Outputs to screen strings using format specifiers the variables stored in memory 
+      after they have been “worked on” by the preceding methods.
     * How do the format specifiers differ than what you've seen before and what do they do?
-
+      Limits the number of characters in the string (%-4s)
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
 * Hint: You can use existing methods!
