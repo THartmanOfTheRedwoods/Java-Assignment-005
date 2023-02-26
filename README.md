@@ -6,18 +6,18 @@ As a new Java developer, you will be required to familiarize yourself with exist
     * Method names
     * Variables
 * Using Java terminology, break down every piece of the method **convertF2K**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
+    * What is the access modifier? //public
+    * Is it a class or object method, how do you know? //object i think, because it can be called?
+    * What is its return type? //double
+    * What parameters does it require, and what are the parameter(s) datatype(s)? //fahrenheit, double
+    * Describe for me how the body of the method executes (i.e. its flow of execution). //first it gets a double in fahrenheit, then it passes that through F2C to get another double, then it runs that through C2K
 * Using Java terminology, break down method **getUnitChoice**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
-    * How do the format specifiers differ than what you've seen before and what do they do?
+    * What is the access modifier? //public
+    * Is it a class or object method, how do you know? //I think it's an object again for the same reason as before, but I'm not sure
+    * What is its return type? //it was string. I made it void/no return type.
+    * What parameters does it require, and what are the parameter(s) datatype(s)? //none
+    * Describe for me how the body of the method executes (i.e. its flow of execution). //it did print some lines of text and then returned the user's input, but i made it just print
+    * How do the format specifiers differ than what you've seen before and what do they do? //it formats it all first with specifiers, so it puts the text in after as its own specifier
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
