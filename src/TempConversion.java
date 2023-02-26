@@ -23,6 +23,8 @@ public class TempConversion {
         return kelvin - 273.15;
     }
 
+    public static double convertK2F(double kelvin) { return kelvin - 459.67;}
+
     public static double getTemp(String unit) {
         System.out.printf("%-40s : ", String.format("Please enter °%s temperature to convert", unit));
         return Double.parseDouble(input.nextLine());
@@ -37,7 +39,55 @@ public class TempConversion {
     }
 
     public static void main(String[] args) {
+
         while(true) {
+            System.out.println("Enter the Unit to convert from: \n");
+            String temp1 = getUnitChoice();
+            switch (temp1){
+                case "q": return;
+                case "Q": return;
+            }
+            System.out.println("Enter the Unit to convert to: \n");
+            String temp2 = getUnitChoice();
+            switch (temp2){
+                case "q": return;
+                case "Q": return;
+            }
+            switch(temp1+temp2){
+                case "fc": double f2C=convertF2C(getTemp(temp1));
+                    double tempinp = getTemp(temp1);
+                    System.out.println("Result " + tempinp + " " + f2C + " " + temp2);
+                //System.out.printf("\n %s converted to %s equals %d \n\n", temp1, temp2, f2C);
+                    break;
+                case "fk": double f2k=convertF2K(getTemp(temp1));
+                    System.out.printf("\n %s converted to %s equals %d \n\n", temp1, temp2, f2k);
+                System.out.println(f2k);
+                    break;
+                case "cf": double c2f=convertC2F(getTemp(temp1));
+                    System.out.printf("\n%s converted to %s equals %d\n\n", temp1, temp2, c2f);
+                    System.out.println(c2f);
+                    break;
+                case "ck": double c2k=convertC2K(getTemp(temp1));
+                    System.out.printf("\n%s converted to %s equals %d\n\n", temp1, temp2, c2k);
+                    System.out.println(c2k);
+                    break;
+                case "kf": double k2f=convertK2F(getTemp(temp1));
+                    System.out.printf("\n%s converted to %s equals %d\n\n", temp1, temp2, k2f);
+                    System.out.println(k2f);
+                    break;
+                case "kc": double k2c=convertK2C(getTemp(temp1));
+                    System.out.printf("\n%s converted to %s equals %d\n\n", temp1, temp2, k2c);
+                    System.out.println(k2c);
+                    break;
+                default:
+                    System.out.println(temp1 + " and " + temp2 + " do not match any temperature abbreviation combinations that I know");
+                    break;
+            }
+
+
+
+            //getTemp(getUnitChoice());
+
 
         }
     }
