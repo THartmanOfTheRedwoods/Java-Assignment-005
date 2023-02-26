@@ -4,20 +4,43 @@
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
     * Method names
+      * convertC2F
+      * convertC2K
+      * convertF2C
+      * convertF2K
+      * convertK2C
+      * getTemp
+      * getUnitChoice
+      * main
     * Variables
+      * celsius
+      * fahrenheit
+      * kelvin
+      * unit
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+      * static
     * Is it a class or object method, how do you know?
+      * class, it is static
     * What is its return type?
+      * double
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * double fahrenheit
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * passes parameter fahrenheit to invoke convertF2C() within convertC2K()
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+      * static
     * Is it a class or object method, how do you know?
+      * class method, it is static
     * What is its return type?
+      * it returns String
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * Void, n/a
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * Shows a number of possible inputs and listens for a String on the scanner, which it uses as its return statement.
     * How do the format specifiers differ than what you've seen before and what do they do?
+      * They have extra format rules applied to the arguments that will be passed to the formatter. These rules seem to pertain to the width in characters of the output.
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
