@@ -4,20 +4,60 @@
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
     * Method names
-    * Variables
-* Using Java terminology, break down every piece of the method **convertF2K**.
+ convertC2F
+  convertC2K
+  convertF2C
+  convertF2K
+  convertK2C
+  getTemp
+  getUnitChoice
+  main
+  * Variables 
+  User input or input
+* * Using Java terminology, break down every piece of the method **convertF2K*
+
+
+
+
     * What is the access modifier?
+Access modifier: public
+
     * Is it a class or object method, how do you know?
+
+Class/Object method: It is a class method because it has the keyword static
+
     * What is its return type?
+
+Double
+
     * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
+
+Parameters: It requires one double named fahrenheit
+
+  * Describe for me how the body of the method executes (i.e. its flow of execution).
+
+The method prints a formatted string to the console using System.out.printf. 
+The method returns the next line of input from the Scanner object 'input'.
+
+
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+
+Public
+
     * Is it a class or object method, how do you know?
+It is a class method because it has the keyword 'static'
     * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
+String
+    * What parameters does it require, and what are the parameter(s) datatype(s)?\
+does not require any
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+
+The method starts by printing string to the console. The user's input is read in using the Scanner object input and returned as a string.
+
     * How do the format specifiers differ than what you've seen before and what do they do?
+
+The format specifiers are both neatly organized this time around and are interactable.
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
