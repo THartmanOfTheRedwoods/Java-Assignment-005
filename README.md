@@ -3,25 +3,36 @@
 ## Part 1: - Tracing the Code
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
-    * Method names
-    * Variables
+    * Method names: convertC2F, convertC2K, convertF2C, convertF2K, convertK2C, getTemp, getUnitChoice
+    * Variables: celsius, fahrenheit, kelvin, unit
 * Using Java terminology, break down every piece of the method **convertF2K**.
-    * What is the access modifier?
+    * What is the access modifier? 
+      * public
     * Is it a class or object method, how do you know?
+      * class, bc all the attributes are stored so that we can instantiate this class and get our desired object.
     * What is its return type?
+      * Double
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * requires type double, parameter fahrenheit.
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * when it gets called it gets passed double fahrenheit, then it returns the value that convertC2K(convertF2C(fahrenheit))returns when called and ultimately takes the passed double fahrenheit value and converts it to °C , then to °K. 
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+      * public
     * Is it a class or object method, how do you know?
+      * class, bc all the attributes are stored so that we can instantiate this class and get our desired object.
     * What is its return type?
+      * String
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * none
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * When the method gets called, it S.out's to tell the user to enter a value. Then it stores the value. 
     * How do the format specifiers differ than what you've seen before and what do they do?
+      * %4s prints out the string, left-padded by spaces until the total length is 4, %40s%n creates padding so that the end of each string lines up and inserts a new line
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
-* Hint: You can use existing methods!
+* Hint: You can use existing methods!c
 
 ## Part 3: - Switch it Up
 Part 3 is all about learning how to use the **switch** conditional statement, or the **enhanced switch** statement. You've learned about **if/else** now you will learn about **switch**.
