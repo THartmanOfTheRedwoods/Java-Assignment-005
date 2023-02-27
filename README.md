@@ -4,21 +4,39 @@
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
     * Method names
+      * convertC2F
+      * convertC2K
+      * convertF2C
+      * convertF2K
+      * convertK2C
+      * getTemp
+      * getUnitChoice
     * Variables
+      * Scanner Input
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+      * Public
     * Is it a class or object method, how do you know?
+      * It is a class method because you can use it without creating an instance of TempConversion
     * What is its return type?
+      * double
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * It requires a double parameter for fahrenheit
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * It takes the fahrenheit parameter and uses the Convert f2c method on it. Then it takes the result of that and uses convert c2k on it. Then it returns the return of Convert c2k
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+      * Public
     * Is it a class or object method, how do you know?
+      * It is a class method because you can use it without creating an instance of TempConversion
     * What is its return type?
+      * It has a String return type.
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * It has no parameters.
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * It prints out the four messages and then waits for user input.
     * How do the format specifiers differ than what you've seen before and what do they do?
-
+      * The format specifiers differ because they use % multiple times in one string. They prompt the user on how to use the different functions.
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
 * Hint: You can use existing methods!
