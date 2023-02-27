@@ -3,21 +3,44 @@
 ## Part 1: - Tracing the Code
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
-    * Method names
+    * Method names  
+      * getUnitChoice()
+      * convertC2F()
+      * convertC2K()
+      * convertF2C()
+      * convertF2K()
+      * convertK2C()
+      * getTemp()
     * Variables
+      * tbd
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+      * all are public
     * Is it a class or object method, how do you know?
+      * class methods, since they are all static
     * What is its return type?
+      * double for most, String for one, void for the other
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * double for most, String for one, String array for the other
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * (if it has a parameter)
+        * Top down, sets the parameter equal to the argument passed whenever the parameter is used
+        * If it has a return value, it will end with a return statement and the value to return to where it was called from
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+      * public
     * Is it a class or object method, how do you know?
+      * Class. It is static and thus belongs to the Class itself
     * What is its return type?
+      * String
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+      * It doesn't
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+      * Top down prints the different lines which tell the user what choices they have and telling them what each choice corresponds to
     * How do the format specifiers differ than what you've seen before and what do they do?
+      * We haven't seen character limiters on Strings before I don't believe. 
+        * '%-4s' sets the string to 4 characters (adding spaces as needed) and justifying the String to the left side of the screen
+        * '%40s' sets the string to 40 characters (adding spaces as needed) and justifying the String to the right side of the screen
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
