@@ -86,7 +86,7 @@ public class TempConversion {
 
 
 
-            //getTemp(getUnitChoice());
+            getTemp(getUnitChoice());
 
 
         }
