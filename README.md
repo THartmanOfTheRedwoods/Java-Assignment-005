@@ -6,18 +6,29 @@ As a new Java developer, you will be required to familiarize yourself with exist
     * Method names
     * Variables
 * Using Java terminology, break down every piece of the method **convertF2K**.
-    * What is the access modifier?
+    * What is the access modifier?  
+        * Public
     * Is it a class or object method, how do you know?
+        * This is an object method, because it is within the class TempConversion, and its name starts with an lower case letter.
     * What is its return type?
+        * Its return type is double.
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+        * The parameters it requires is fahrenheit, its datatype is double.
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+        * The parameter is sent through the method convertF2C, then the result is sent through the method convertC2K, then it is returned to the parameter of convertF2K.
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+        * Public 
     * Is it a class or object method, how do you know?
+        * This is an object method, it is within the class TempConversion, and its first word is lowercase.
     * What is its return type?
+        * String
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+        * it has no parameters
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+        * Right now it prints four different lines of strings, and then it is going to return the input of the next line. 
     * How do the format specifiers differ than what you've seen before and what do they do?
+        * The format specifiers are different than what we have seen because they all utilize %40s and %-4s. I am unaware of how this works, and what variables %s calls to in this instance.
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
