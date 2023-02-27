@@ -3,21 +3,32 @@
 ## Part 1: - Tracing the Code
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
-    * Method names
-    * Variables
+    * Method names: convertC2F, convertC2K, convertF2C, convertF2K, convertK2C, getTemp, getUnitChoice, main
+    * Variables: input
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+    * public
     * Is it a class or object method, how do you know?
+    * it is a class method because its static
     * What is its return type?
+    * double
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+    * double(farenheit)
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+    * It takes a double, in this case its farenheit, then it runs the F2C method first. Then it takes the celcius output and enters it into the C2K method to convert F to K
 * Using Java terminology, break down method **getUnitChoice**.
     * What is the access modifier?
+    * public
     * Is it a class or object method, how do you know?
+    * Its a class method because its static
     * What is its return type?
+    * String
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+    * none
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+    * It will print out a list of options to the console, it will ask the user for input on which unit to use. It ill take then response and store in a string
     * How do the format specifiers differ than what you've seen before and what do they do?
+    * i have seen %n for new line, and we have also use %.2f for floating point numbers before. This will print out the decimal number with it only going 2 numbers past the decimal point.
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
