@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Trevor Hartman
+ * @author Geng Cha
+ *
+ * @since Version 1.0
+ *
+ */
 import java.util.Scanner;
 
 public class TempConversion {
@@ -22,6 +30,10 @@ public class TempConversion {
     public static double convertK2C(double kelvin) {
         return kelvin - 273.15;
     }
+    //added method
+    public static double convertK2F(double kelvin) {
+        return convertC2F(convertK2C(kelvin));
+    }
 
     public static double getTemp(String unit) {
         System.out.printf("%-40s : ", String.format("Please enter °%s temperature to convert", unit));
@@ -38,7 +50,65 @@ public class TempConversion {
 
     public static void main(String[] args) {
         while(true) {
+            System.out.println("Pick a temperature Unit to convert from");
+            String unit = getUnitChoice();
 
+            switch (unit) {
+                case "C":
+                    System.out.println("Pick another unit to convert to");
+                    switch (getUnitChoice()) {
+                        case "C":
+                            System.out.println("What? Why would you even do this?");
+                            break;
+                        case "F":
+                            System.out.printf("Result is %s", convertC2F(getTemp(unit)));
+                            break;
+                        case "K":
+                            System.out.printf("Result is %s", convertC2K(getTemp(unit)));
+                            break;
+                        case "Q":
+                            System.out.println("You quit buddy");
+                            break;
+                    } break;
+                case "F":
+                    System.out.println("Pick another unit to convert to");
+                    switch (getUnitChoice()) {
+                        case "C":
+                            System.out.printf("Result is %s", convertF2C(getTemp(unit)));
+                            break;
+                        case "F":
+                            System.out.println("You seem a little confused buddy...");
+                            break;
+                        case "K":
+                            System.out.printf("Result is %s", convertF2K(getTemp(unit)));
+                            break;
+                        case "Q":
+                            System.out.println("You quit buddy");
+                            break;
+                    } break;
+                case "K":
+                    System.out.println("Pick another unit to convert to");
+                    switch (getUnitChoice()) {
+                        case "C":
+                            System.out.printf("Result is %s", convertK2C(getTemp(unit)));
+                            break;
+                        case "F":
+                            System.out.printf("Result is %s", convertK2F(getTemp(unit)));
+                            break;
+                        case "K":
+                            System.out.println("Yeah, it's so hard to figure that one out...");
+                            break;
+                        case "Q":
+                            System.out.println("You quit buddy");
+                            break;
+                    } break;
+                case "Q":
+                    System.out.println("You quit buddy");
+                    break;
+                default:
+                    System.out.println("Invalid input");
+                    break;
+            } break;
         }
     }
 }
