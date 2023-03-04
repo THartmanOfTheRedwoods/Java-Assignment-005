@@ -7,17 +7,55 @@ As a new Java developer, you will be required to familiarize yourself with exist
     * Variables
 * Using Java terminology, break down every piece of the method **convertF2K**.
     * What is the access modifier?
+  * 
+  * Public
+  * 
     * Is it a class or object method, how do you know?
+  * 
+  * I believe its a class method because it doesnt look like its creating an object
+  * 
     * What is its return type?
+  * 
+  * double
+  * 
     * What parameters does it require, and what are the parameter(s) datatype(s)?
+  * 
+  * It looks like F2K has the parameter Fahrenheit and its datatype is double.
+  * 
     * Describe for me how the body of the method executes (i.e. its flow of execution).
+*
+* For F2K I think its taking the entered Fahrenheit and then calling on C2K and asking it to take
+* the Celsius from F2C.
+*
 * Using Java terminology, break down method **getUnitChoice**.
+* 
+* getUnitChoice is basically a menu screen asking you to select what temp you'd like to convert
+* 
     * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
-    * How do the format specifiers differ than what you've seen before and what do they do?
+* 
+* public
+* 
+  * Is it a class or object method, how do you know?
+* 
+* I would say this is an object because it's a new method outside the class with a String return type
+* 
+  * What is its return type?
+* 
+* String
+* 
+  * What parameters does it require, and what are the parameter(s) datatype(s)?
+* 
+*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+* 
+  * Describe for me how the body of the method executes (i.e. its flow of execution).
+* 
+* It prints Four lines to the terminal and will hopefully take your input to convert your desired temperature.
+* 
+  * How do the format specifiers differ than what you've seen before and what do they do?
+*
+* I haven't paid enough attention to the Format specifiers ,so I am not sure how they are really different
+* however they seem to mean String and new line
+*
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
