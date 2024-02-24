@@ -3,7 +3,7 @@ public class Quadratic {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter three integers (a, b, c) for the quadratic equation ax^2 + bx + c = 0:");
+        System.out.println("Enter three integers (a, b, c) for the quadratic equation ax^2 + bx + c = 0: ");
 
         int a = scanner.nextInt();
         int b = scanner.nextInt();
