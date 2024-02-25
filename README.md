@@ -1,4 +1,4 @@
-# Quadratic Equation Solver - Java Assignment 005
+# NotIt Equation Solver - Java Assignment 005
 
 **Instructions:**
 1. Fork this repository to your GitHub account.
@@ -8,7 +8,7 @@
 ## Assignment
 
 **Objective:**
-Create a file named `src/Quadratic.java` and write a program that calculates the roots of the quadratic equation:
+Create a file named `src/NotIt.java` and write a program that calculates the roots of the quadratic equation:
 $$ax^2 + bx + c = 0$$
 using the quadratic formula:
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
