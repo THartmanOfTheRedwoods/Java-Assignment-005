@@ -15,6 +15,10 @@ import java.util.Scanner;
             double c = scanner.nextDouble();
 
             double discriminant = b * b - 4 * a * c;
+
+            if(a==0){System.out.printf("You are attempting to divide by zero");
+                System.exit(0);}
+
             if(discriminant < 0){
                 System.out.printf("You are attempting to use a negative number in a radical");
                 System.exit(0);
@@ -26,6 +30,7 @@ import java.util.Scanner;
                 double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
                 double root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
                 System.out.printf("Roots are real and different: root1 = %.2f, root2 = %.2f%n", root1, root2);
+
             } else if (discriminant == 0) {
                 double root = -b / (2 * a);
                 System.out.printf("Roots are real and same: root = %.2f%n", root);
